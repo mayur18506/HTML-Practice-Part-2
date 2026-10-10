@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Tag</title>
+</head>
+
+<body>
+    <form action="" method="post">
+
+        <fieldset>
+            <legend>Personal Details</legend><br>
+
+        <label for="">Name</label> <input type="text" name="" value="" placeholder="Enter your name"> <br> <br>
+
+        <label for="">Password</label> <input type="password" name=""> <br> <br>
+
+        <label for="">Gender</label> <input type="radio" name="gender" id="male"> <label for="male">Male</label> <input
+            type="radio" name="gender" id="female"> <label for="female">Female</label> <br> <br>
+
+        <label for="">Hobbies</label> <input type="checkbox" name="hobby" id="music"> <label for="music">Music</label>
+        <input type="checkbox" name="hobby" id="football"> <label for="football">football</label> <br><br>
+
+        <label for="">Message</label> <textarea rows="10"
+            cols="60">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores nam harum commodi iure eaque consectetur aperiam error? Quasi nihil veritatis provident maxime magni, id ipsa in at dolorum porro maiores.</textarea>
+        <br><br>
+
+        <label for="">Country</label> <select name="" size="2" multiple>
+            <option value=In">India</option>
+            <option value="pk">Pakistan</option>
+            <option value="ne">Nepal</option>
+            <option selected value="ch">China</option>
+        </select> <br><br>
+
+        <label for="">Cars</label> <select name="" id="">
+            <optgroup label="Toyota">
+                <option value="">Innova</option>
+                <option value="">Etios</option>
+                <option value="">Fortuner</option>
+            </optgroup>
+            <optgroup label="Renault">
+                <option value="">Kwid</option>
+                <option value="">Duster</option>
+                <option value="">Capture</option>
+            </optgroup>
+        </select>
+        <br> <br>
+
+        <label>Cars</label> <input list="cars">
+        <datalist id="cars">
+            <option value="Innova"></option>
+            <option value="Kwid"></option>
+            <option value="Swift"></option>
+            <option value="Duster"></option>
+            </datalist> <br> <br>
+
+            <label for="">Upload File</label> <input type="file" accept="image/*"> <br><br>
+
+            <input type="submit" value="Save"> 
+
+            <input type="reset">
+
+            <input type="image" src="WhatsApp Image 2025-02-03 at 21.34.18_d5f76b3d.jpg" width="20px" alt="mayur">
+
+
+        </fieldset>    
+    </form>
+</body>
+
+</html>

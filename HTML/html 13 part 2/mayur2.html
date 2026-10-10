@@ -1,0 +1,226 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>MoviesMod - Template</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Pacifico&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg:#f6f7f9;
+      --card:#ffffff;
+      --muted:#9aa2aa;
+      --line:#e6e8ea;
+      --radius:10px;
+      --container-width:420px;
+    }
+    *{box-sizing:border-box}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      background:var(--bg);
+      color:#222;
+      display:flex;
+      align-items:center;
+      justify-content:center;
+      min-height:100vh;
+      padding:20px;
+    }
+
+    .phone{
+      width:100%;
+      max-width:var(--container-width);
+      background:linear-gradient(180deg,#ffffff 0%, #fbfcfd 100%);
+      border-radius:18px;
+      box-shadow:0 12px 40px rgba(18,24,31,0.12);
+      padding:28px 22px;
+      border:1px solid rgba(0,0,0,0.03);
+    }
+
+    header{
+      text-align:center;
+      margin-bottom:16px;
+    }
+    header h1{
+      margin:0 0 6px 0;
+      font-family:Pacifico, cursive;
+      font-size:28px;
+      color:#2b2b2b;
+    }
+    header p{
+      margin:0;
+      color:var(--muted);
+      font-size:13px;
+      line-height:1.4;
+    }
+
+    .list{
+      margin-top:18px;
+    }
+
+    .item{
+      margin:18px 0;
+      display:block;
+    }
+
+    .url-badge{
+      display:inline-block;
+      background:#222;
+      color:#fff;
+      font-size:11px;
+      padding:6px 10px;
+      border-radius:999px;
+      margin-bottom:10px;
+      font-weight:600;
+      opacity:0.95;
+    }
+
+    .divider{height:1px;background:var(--line);margin:12px 0;border-radius:2px}
+
+    .cta{
+      display:flex;
+      align-items:center;
+      gap:12px;
+      padding:14px 18px;
+      border-radius:12px;
+      font-weight:700;
+      font-size:15px;
+      color:#fff;
+      text-decoration:none;
+      box-shadow:0 6px 16px rgba(12,20,30,0.06);
+    }
+
+    .cta .icon{
+      width:26px;height:26px;flex:0 0 26px;display:inline-grid;place-items:center;background:rgba(255,255,255,0.12);border-radius:8px
+    }
+
+    /* color variants */
+    .blue{background:#1e90ff;color:#fff}
+    .red{background:#e33f3f}
+    .gray{background:#7a8186}
+    .yellow{background:#ffcc00;color:#1d1d1d}
+    .green{background:#2f9f6b}
+    .black{background:#34495e}
+
+    /* make url badges colored per item */
+    .u-blue{background:#2c8dde}
+    .u-red{background:#d9534f}
+    .u-gray{background:#8e989d}
+    .u-yellow{background:#f4c542;color:#222}
+    .u-green{background:#2da66a}
+    .u-dark{background:#333}
+
+    /* responsive small */
+    @media (max-width:420px){
+      .phone{padding:20px}
+    }
+
+  </style>
+</head>
+<body>
+  <div class="phone" role="main">
+    <header>
+      <h1>Welcome to MoviesMod</h1>
+      <p>Download the latest Hollywood and Bollywood movies in various resolutions including 480p, 720p, and 1080p and 4K — choose from list below.</p>
+    </header>
+
+    <nav class="list">
+
+      <a class="item" href="#">
+        <span class="url-badge u-dark">TELEGRAM CHANNEL</span>
+        <div class="cta blue" aria-hidden="false">
+          <span class="icon" aria-hidden="true"> 
+            <!-- paper plane icon -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M2 21L23 12L2 3L7 12L2 21Z" fill="white"/></svg>
+          </span>
+          <span>Telegram Channel</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-dark">https://gamesleech.com</span>
+        <div class="cta black">
+          <span class="icon"> 
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M6 10V6h4v4H6zM14 10V6h4v4h-4zM6 18v-4h4v4H6zM14 18v-4h4v4h-4z" fill="white"/></svg>
+          </span>
+          <span>GAMESLEECH - PC GAMES</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-red">https://nekohd.com</span>
+        <div class="cta red">
+          <span class="icon">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 6h18v12H3z" fill="white"/></svg>
+          </span>
+          <span>NEKOHD - WATCH ANIMES</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-gray">https://dramadrip.com</span>
+        <div class="cta gray">
+          <span class="icon">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="white"/></svg>
+          </span>
+          <span>DRAMADRIP - WATCH DRAMAS</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-yellow">https://uhdmovies.rip</span>
+        <div class="cta yellow">
+          <span class="icon">4K</span>
+          <span>UHDMOVIES - 4K &amp; UHD</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-blue">https://moviesleech.net</span>
+        <div class="cta blue">
+          <span class="icon">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M4 6h16v12H4z" fill="white"/></svg>
+          </span>
+          <span>MOVIESLEECH - BOLLYWOOD</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-red">https://animeflix.pm</span>
+        <div class="cta red">
+          <span class="icon">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M6 4v16l12-8L6 4z" fill="white"/></svg>
+          </span>
+          <span>ANIMEFLIX - ANIME</span>
+        </div>
+      </a>
+
+      <div class="divider"></div>
+
+      <a class="item" href="#">
+        <span class="url-badge u-green">https://moviesmod.plus</span>
+        <div class="cta green">
+          <span class="icon">
+            <svg width="14" height="14" viewBox="0 0 24 24"><path d="M3 12h14v8H3zM19 6h2v14h-2z" fill="white"/></svg>
+          </span>
+          <span>MOVIESMOD - HOLLYWOOD</span>
+        </div>
+      </a>
+
+    </nav>
+
+  </div>
+</body>
+</html>
